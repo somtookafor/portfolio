@@ -223,7 +223,7 @@ h6 {
   color: var(--contrast-color);
   background-color: var(--accent-color);
   font-size: 22px;
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   width: 40px;
