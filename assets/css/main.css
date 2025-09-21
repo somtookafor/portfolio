@@ -6,10 +6,6 @@
 * License: For personal and professional use
 */
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://multimediaaspiresolutions.com/color-guidelines/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -30,7 +26,7 @@
 :root {
   --nav-color: #7f8c8d;  /* Standard text color for navigation links */
   --nav-hover-color: #00bfa6; /* Color applied when navigation links are hovered or active */
-  --nav-mobile-background-color: #1a2942; /* Background color of the mobile navigation menu */
+  --nav-mobile-background-color: #ffffff; /* Background color of the mobile navigation menu */
   --nav-dropdown-background-color: #1a2942; /* Background color for dropdown menus under main nav items */
   --nav-dropdown-color: #bdc3c7; /* Default color for links inside dropdown menus */
   --nav-dropdown-hover-color: #00e0c7; /* Hover state color for dropdown menu links */
@@ -250,7 +246,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 .mobile-nav-toggle {
-  display: none;
+  display: block;
 }
 
 .navmenu {
