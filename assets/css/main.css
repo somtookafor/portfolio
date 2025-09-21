@@ -245,8 +245,19 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+/* Hide hamburger on large screens */
 .mobile-nav-toggle {
-  display: block;
+  display: none;
+}
+
+/* Show hamburger only on small screens */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px; /* adjust size if needed */
+    line-height: 1;
+  }
 }
 
 .navmenu {
