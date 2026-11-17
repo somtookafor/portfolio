@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erudio360 — School Management System | Somtochukwu Okafor</title>
+    <meta name="description" content="Erudio360 is a comprehensive school management system developed by Somtochukwu Okafor to streamline administration, communication, and learning workflows.">
+    <meta name="author" content="Somtochukwu Okafor">
+    <link rel="canonical" href="https://somtookafor.github.io/portfolio/erudio360.html">
+
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://somtookafor.github.io/portfolio/erudio360.html">
+    <meta property="og:title" content="Erudio360 — School Management System | Somtochukwu Okafor">
+    <meta property="og:description" content="A comprehensive school management system designed to streamline administration, communication, and learning workflows.">
+    <meta property="og:image" content="https://somtookafor.github.io/portfolio/assets/img/projects/erudio360/og-preview.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://somtookafor.github.io/portfolio/erudio360.html">
+    <meta name="twitter:title" content="Erudio360 — School Management System | Somtochukwu Okafor">
+    <meta name="twitter:description" content="A comprehensive school management system designed to streamline administration, communication, and learning workflows.">
+    <meta name="twitter:image" content="https://somtookafor.github.io/portfolio/assets/img/projects/erudio360/og-preview.jpg">
+
+    <!-- Favicons & Mobile Theme -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Fonts & Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom-theme.css" rel="stylesheet">
+
+    <!-- Custom CSS for Side-by-Side Horizontal Gold Accordion Tabs & Block List Items -->
+    <style>
+        .custom-accordion-headers {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 0;
+        }
+
+            .custom-accordion-headers .accordion-item {
+                border: none;
+                background: transparent;
+                flex: 1; /* Makes both tab buttons share equal width side-by-side */
+            }
+
+            .custom-accordion-headers .accordion-button {
+                border-radius: 4px;
+                justify-content: center;
+                border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+                background-color: var(--surface-color);
+                color: var(--heading-color);
+                padding: 10px 20px;
+            }
+
+                .custom-accordion-headers .accordion-button:not(.collapsed) {
+                    background-color: var(--accent-color) !important;
+                    color: #ffffff !important;
+                    border-color: var(--accent-color) !important;
+                    box-shadow: none !important;
+                }
+
+                .custom-accordion-headers .accordion-button::after {
+                    display: none; /* Removes accordion drop-down arrow for a cleaner tab-like design */
+                }
+
+                .custom-accordion-headers .accordion-button:focus {
+                    box-shadow: none !important;
+                }
+
+        /* Forces portfolio description list items to display as full block lines with browser bullets */
+        .portfolio-description ul {
+            list-style-type: disc !important;
+            padding-left: 20px !important;
+        }
+
+        .portfolio-description li {
+            display: block !important;
+            margin-bottom: 12px;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data (SoftwareApplication & Person) -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Erudio360",
+          "operatingSystem": "All",
+          "applicationCategory": "EducationalApplication",
+          "description": "A comprehensive school management system designed to streamline administration, communication, and learning workflows.",
+          "author": {
+            "@type": "Person",
+            "name": "Somtochukwu Okafor",
+            "url": "https://somtookafor.github.io/portfolio/"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+    </script>
+
+    <!-- =======================================================
+    - Template Name: iPortfolio
+    - Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+    - Customized and Redesigned: Somtochukwu Okafor
+    - Updated: Jun 29 2024 with Bootstrap v5.3.3
+    - Author: BootstrapMade.com
+    - License: https://bootstrapmade.com/license/
+        ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+    <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+
+        <div class="profile-img">
+            <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1 class="sitename">Somtochukwu Okafor</h1>
+        </a>
+
+        <div class="social-links text-center">
+            <a href="https://x.com/judebill" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/s.j.okafor/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/iamjudebill/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/s-j-okafor/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <div class="theme-toggle-wrap">
+            <label class="theme-toggle-label" for="theme-mode">Appearance</label>
+            <select id="theme-mode" class="theme-mode-select" aria-label="Choose color mode">
+                <option value="auto">Auto</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+
+        <nav id="navmenu" class="navmenu">
+            <ul>
+                <li><a href="index.html"><i class="bi bi-house navicon"></i>Home</a></li>
+                <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+                <li><a href="index.html#skills"><i class="bi bi-stars navicon"></i>Skills</a></li>
+                <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Experience & Education</a></li>
+                <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i>Services</a></li>
+                <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i> Showcase</a></li>
+                <li><a href="index.html#testimonials"><i class="bi bi-chat-square-quote navicon"></i> Feedback</a></li>
+                <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background">
+            <div class="container d-lg-flex justify-content-between align-items-center">
+                <h1 class="mb-2 mb-lg-0">Erudio360</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html" style="color: #ffffff;">Home</a></li>
+                        <li class="current" style="color: var(--accent-color);">Software Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div><!-- End Page Title -->
+        <!-- Portfolio Details Section -->
+        <section id="portfolio-details" class="portfolio-details section">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <!-- Left: Slider -->
+                    <div class="col-lg-8">
+                        <div class="portfolio-details-slider swiper init-swiper">
+
+                            <script type="application/json" class="swiper-config">
+                                {
+                                  "loop": true,
+                                  "speed": 600,
+                                  "autoplay": {
+                                    "delay": 5000
+                                  },
+                                  "slidesPerView": "auto",
+                                  "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                  }
+                                }
+                            </script>
+
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/projects/erudio360/login.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/projects/erudio360/login.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/projects/erudio360/login.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/projects/erudio360/login.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Project Information -->
+                    <div class="col-lg-4">
+                        <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Project Name</strong>: Erudio360</li>
+                                <li><strong>Category</strong>: Development</li>
+                                <li><strong>Client</strong>: Multiple</li>
+                                <li><strong>Project date</strong>: 04 November, 2026</li>
+                                <li><strong>Platform</strong>: Web & Mobile</li>
+                                <li><strong>Project Version</strong>: 1.0.0</li>
+                                <li class="text-center pt-3">
+                                    <a href="http://publications.oasisinternationaljournal.org/" class="btn text-white px-4 py-2 rounded-pill w-100" style="background-color: var(--accent-color); transition: 0.3s;" target="_blank">
+                                        <i class="bi bi-download me-2"></i> Download
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Full Width: Side-by-Side Collapsible Tabs & Content -->
+                    <div class="col-lg-12 mt-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="accordion" id="projectDetailsAccordion">
+
+                            <!-- Side-by-Side Tab Buttons -->
+                            <div class="custom-accordion-headers">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingDescription">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDescription" aria-expanded="true" aria-controls="collapseDescription">
+                                            <strong>Description</strong>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingInstallation">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstallation" aria-expanded="false" aria-controls="collapseInstallation">
+                                            <strong>Installation</strong>
+                                        </button>
+                                    </h2>
+                                </div>
+                            </div>
+
+                            <!-- Content Panel 1: Description -->
+                            <div id="collapseDescription" class="accordion-collapse collapse show" aria-labelledby="headingDescription" data-bs-parent="#projectDetailsAccordion">
+                                <div class="accordion-body portfolio-description border mt-3 rounded">
+                                    <h2>Overview</h2>
+                                    <p class="fst-italic py-2">
+                                        <strong>MAS MedSuite</strong> is a robust, web-based hospital and clinic management system engineered to streamline administrative, clinical, and operational workflows for modern healthcare facilities. Designed with efficiency and scalability in mind, it bridges the gap between patients, medical staff, and hospital administrators.
+                                    </p>
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <h3>Key Features & Modules</h3>
+                                            <ul>
+                                                <li><strong>Patient Management:</strong> Secure electronic health records (EHR), patient registration, and medical history tracking.</li>
+                                                <li><strong>Appointment Scheduling:</strong> Real-time booking system for doctors, clinics, and departments to minimize wait times.</li>
+                                                <li><strong>Billing & Invoicing:</strong> Automated generation of bills for consultations, lab tests, and pharmacy prescriptions.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h3>&nbsp;</h3>
+                                            <ul>
+                                                <li><strong>Pharmacy & Inventory:</strong> Track medicine stocks, monitor expiration dates, and manage prescription dispensations.</li>
+                                                <li><strong>Role-Based Access Control:</strong> Secure login portals tailored for administrators, doctors, nurses, receptionists, and patients.</li>
+                                                <li><strong>Reporting & Analytics:</strong> Comprehensive dashboard insights tracking daily patient turnover, revenue, and hospital performance metrics.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <p class="py-3 mb-0">
+                                        Developed by <strong>Somtochukwu Okafor</strong>, MAS MedSuite focuses on delivering a seamless user experience (UX) with a clean interface, ensuring that medical professionals can spend less time navigating software and more time caring for patients.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Content Panel 2: Installation -->
+                            <div id="collapseInstallation" class="accordion-collapse collapse" aria-labelledby="headingInstallation" data-bs-parent="#projectDetailsAccordion">
+                                <div class="accordion-body portfolio-description border mt-3 rounded">
+                                    <h2>System Requirements & Setup</h2>
+                                    <p class="fst-italic py-2">
+                                        Follow the steps below to successfully install and configure MAS MedSuite on your local development server or production environment.
+                                    </p>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h3>Installation Guide</h3>
+                                            <ul>
+                                                <li><strong>Prerequisites:</strong> Ensure you have a running web server environment (such as Apache or Nginx), PHP (>= 8.0), and a MySQL/MariaDB database installed.</li>
+                                                <li><strong>Clone or Download:</strong> Download the latest release package from the official GitHub repository or download link provided on this page.</li>
+                                                <li><strong>Database Configuration:</strong> Create a new MySQL database, import the provided SQL schema file located in the database directory, and update your configuration file with your database credentials.</li>
+                                                <li><strong>Server Deployment:</strong> Point your web server document root to the project's public directory and ensure file permissions for storage and upload folders are properly set.</li>
+                                                <li><strong>Initial Login:</strong> Access the application via your browser and log in using the default administrator credentials specified in the documentation.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- /Portfolio Details Section -->
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+        <div class="container">
+            <div class="footer-brand d-flex flex-column flex-sm-row align-items-center justify-content-center gap-3">
+                <span class="credits">Designed by</span>
+
+                <img id="theme-logo"
+                     src="assets/img/logo-rectangle-light.webp"
+                     data-logo-light="assets/img/logo-rectangle-light.webp"
+                     data-logo-dark="assets/img/logo-rectangle-dark.webp"
+                     alt="Somtochukwu Okafor — EdTech Specialist and Full Stack Developer"
+                     width="280"
+                     height="70"
+                     class="footer-logo">
+            </div>
+
+            <div class="copyright text-center mt-3">
+                <p class="m-0">© <span id="year"></span> All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assets/img/logo.png" alt="Loading...">
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom-theme.js"></script>
+
+</body>
+
+</html>
