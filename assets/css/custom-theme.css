@@ -1,0 +1,227 @@
+﻿/* Add after main.css. The sidebar keeps its current appearance in every mode. */
+:root {
+  color-scheme: light;
+}
+
+body[data-theme="dark"] {
+  color-scheme: dark;
+  --background-color: #101820;
+  --default-color: #f1f5f9;
+  --heading-color: #ffffff;
+  --surface-color: #1b2733;
+  --contrast-color: #ffffff;
+}
+
+/* The template's light-background sections declare their own variables. */
+body[data-theme="dark"] .main .light-background,
+body[data-theme="dark"] #footer.light-background {
+  --background-color: #101820;
+  --surface-color: #1b2733;
+}
+
+/* Keep the sidebar appearance independent of the selected page theme. */
+body[data-theme="dark"] #header {
+  --background-color: #040b14;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #151f2b;
+  --contrast-color: #ffffff;
+}
+
+body[data-theme="dark"] .main,
+body[data-theme="dark"] #footer {
+  color: #f1f5f9;
+}
+
+body[data-theme="dark"] .main h1,
+body[data-theme="dark"] .main h2,
+body[data-theme="dark"] .main h3,
+body[data-theme="dark"] .main h4,
+body[data-theme="dark"] .main h5,
+body[data-theme="dark"] .main h6,
+body[data-theme="dark"] #footer h1,
+body[data-theme="dark"] #footer h2,
+body[data-theme="dark"] #footer h3,
+body[data-theme="dark"] #footer h4,
+body[data-theme="dark"] #footer h5,
+body[data-theme="dark"] #footer h6 {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .main p,
+body[data-theme="dark"] .main li,
+body[data-theme="dark"] .main label,
+body[data-theme="dark"] .main .description,
+body[data-theme="dark"] .main .content,
+body[data-theme="dark"] #footer p,
+body[data-theme="dark"] #footer li {
+  color: #e2e8f0;
+}
+
+/* Neutralize common Bootstrap light cards, badges, and inline light panels. */
+body[data-theme="dark"] .main .bg-white,
+body[data-theme="dark"] .main .bg-light,
+body[data-theme="dark"] .main [style*="background-color: #fff"],
+body[data-theme="dark"] .main [style*="background-color: #f8f9fa"] {
+  background-color: #1b2733 !important;
+  color: #f1f5f9 !important;
+}
+
+body[data-theme="dark"] .main .text-dark,
+body[data-theme="dark"] .main .text-body,
+body[data-theme="dark"] .main .text-secondary {
+  color: #e2e8f0 !important;
+}
+
+body[data-theme="dark"] .main .border-light,
+body[data-theme="dark"] .main .border {
+  border-color: #3b4a59 !important;
+}
+
+body[data-theme="dark"] .main input,
+body[data-theme="dark"] .main textarea,
+body[data-theme="dark"] .main select {
+  background-color: #1b2733;
+  color: #f1f5f9;
+  border-color: #64748b;
+}
+
+body[data-theme="dark"] .main input::placeholder,
+body[data-theme="dark"] .main textarea::placeholder {
+  color: #cbd5e1;
+  opacity: 1;
+}
+
+body[data-theme="dark"] .main a:not(.btn):not(.preview-link):not(.details-link),
+body[data-theme="dark"] #footer a {
+  color: #f2cf63;
+}
+
+.theme-toggle-wrap {
+  width: 100%;
+  padding: 0 20px;
+  margin: 18px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.theme-toggle-label {
+  margin: 0;
+  color: #ffffff;
+  font: 500 13px/1.2 var(--nav-font, sans-serif);
+}
+
+.theme-mode-select {
+  min-width: 92px;
+  padding: 6px 26px 6px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  background: #151f2b;
+  color: #ffffff;
+  font: 13px var(--default-font, sans-serif);
+}
+
+.theme-mode-select:focus-visible {
+  outline: 2px solid #f2cf63;
+  outline-offset: 2px;
+}
+
+.footer-brand {
+    padding: 1rem 1.5rem;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--background-color), var(--default-color) 3%);
+}
+
+    .footer-brand .credits {
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: var(--default-color);
+    }
+
+.footer-logo {
+    display: block;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.35rem;
+}
+
+@media (max-width: 575px) {
+    .footer-brand {
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .footer-logo {
+        width: 240px;
+    }
+}
+
+/* Custom CSS for Side-by-Side Horizontal Gold Accordion Tabs & Block List Items */
+
+.custom-accordion-headers {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.custom-accordion-headers .accordion-item {
+    border: none;
+    background: transparent;
+    flex: 1; /* Makes both tab buttons share equal width side-by-side */
+}
+
+.custom-accordion-headers .accordion-button {
+    border-radius: 4px;
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    background-color: var(--surface-color);
+    color: var(--heading-color);
+    padding: 10px 20px;
+}
+
+    .custom-accordion-headers .accordion-button:not(.collapsed) {
+        background-color: var(--accent-color) !important;
+        color: #ffffff !important;
+        border-color: var(--accent-color) !important;
+        box-shadow: none !important;
+    }
+
+    .custom-accordion-headers .accordion-button::after {
+        display: none; /* Removes accordion drop-down arrow for a cleaner tab-like design */
+    }
+
+    .custom-accordion-headers .accordion-button:focus {
+        box-shadow: none !important;
+    }
+
+/* Forces portfolio description list items to display as full block lines with browser bullets */
+.portfolio-description ul {
+    list-style-type: disc !important;
+    padding-left: 20px !important;
+}
+
+.portfolio-description li {
+    display: block !important;
+    margin-bottom: 12px;
+}
+
+
+/* Keep the contact message readable while focused in dark mode. */
+body[data-theme="dark"] .main #message-field:focus,
+body[data-theme="dark"] .main #message-field:focus-visible {
+  background-color: #1b2733 !important;
+  color: #f1f5f9 !important;
+  -webkit-text-fill-color: #f1f5f9;
+  border-color: #d4af37 !important;
+  box-shadow: none !important;
+  outline: none;
+}
+
+#about .profile-image-accent:hover {
+  border-color: #D4AF37 !important;
+}

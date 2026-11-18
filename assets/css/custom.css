@@ -1,0 +1,7 @@
+﻿/* Custom Styling to permanently hide the template's red error box */   
+
+.php-email-form .error-message {
+    display: none !important;
+}
+
+

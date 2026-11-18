@@ -1,57 +1,61 @@
 /**
-* Portfolio Website of Somtochukwu Okafor
-* Original Template Customized and Redesigned
-* Updated: Sep 2025 with Bootstrap v5.3.3
-* Developer: Somtochukwu Okafor
-* License: For personal and professional use
+* Template Name: iPortfolio
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
 */
 
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
-/* Global Colors - These color variables define the overall theme of the website. Changing them here will update the entire site’s color palette */ 
-:root { 
-  --background-color: #f9fafc; /* Overall site background color, applied to all sections */
-  --default-color: #2c3e50; /* Primary text color used across most of the website */
-  --heading-color: #1a2942; /* Applied to titles, headings, and subheadings site-wide */
-  --accent-color: #00bfa6; /* Highlight color representing the brand, used for buttons, links, and attention-grabbing elements */
-  --surface-color: #ffffff; /* Background color for boxed elements like cards or icon containers, creating contrast from the main background */
-  --contrast-color: #ffffff; /* Text color designed to ensure readability against accent, heading, or default backgrounds */
-}
 
-/* Navigation Menu Colors - These variables are used just for the navigation bar, allowing independent customization from the global theme */
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --nav-color: #7f8c8d;  /* Standard text color for navigation links */
-  --nav-hover-color: #00bfa6; /* Color applied when navigation links are hovered or active */
-  --nav-mobile-background-color: #ffffff; /* Background color of the mobile navigation menu */
-  --nav-dropdown-background-color: #1a2942; /* Background color for dropdown menus under main nav items */
-  --nav-dropdown-color: #bdc3c7; /* Default color for links inside dropdown menus */
-  --nav-dropdown-hover-color: #00e0c7; /* Hover state color for dropdown menu links */
+    --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+    --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
+    --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
+    --accent-color: #D4AF37; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+    --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
-/* Color Variants - These classes replace the global color variables when applied, making it easy to reuse consistent themes across sections */
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #eef4f7;
+  --background-color: #f4fafd;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #1a2942;
+  --background-color: #040b14;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #243447;
+  --surface-color: #151f2b;
   --contrast-color: #ffffff;
 }
 
-/* Enable smooth scrolling across the website */
+/* Smooth scroll */
 :root {
   scroll-behavior: smooth;
 }
-
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -223,7 +227,7 @@ h6 {
   color: var(--contrast-color);
   background-color: var(--accent-color);
   font-size: 22px;
-  display: flex !important;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
@@ -245,19 +249,8 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/* Hide hamburger on large screens */
 .mobile-nav-toggle {
   display: none;
-}
-
-/* Show hamburger only on small screens */
-@media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-    cursor: pointer;
-    font-size: 28px; /* adjust size if needed */
-    line-height: 1;
-  }
 }
 
 .navmenu {
@@ -291,7 +284,6 @@ h6 {
   margin-right: 10px;
 }
 
-/* === FIXED TOGGLE CHEVRON === */
 .navmenu a .toggle-dropdown,
 .navmenu a:focus .toggle-dropdown {
   font-size: 12px;
@@ -305,8 +297,7 @@ h6 {
   border-radius: 50%;
   transition: 0.3s;
   flex-shrink: 0;
-  background-color: transparent; /* neutral background */
-  color: var(--nav-color);        /* default link color */
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
 }
 
 .navmenu a .toggle-dropdown:hover,
@@ -327,7 +318,6 @@ h6 {
   color: var(--accent-color);
 }
 
-/* Chevron rotates + gets accent on active */
 .navmenu .active .toggle-dropdown,
 .navmenu .active:focus .toggle-dropdown {
   background-color: var(--accent-color);
@@ -341,7 +331,7 @@ h6 {
 
 .navmenu .dropdown a,
 .navmenu .dropdown a:focus {
-  color: var(--nav-dropdown-color);
+  color: --nav-dropdown-color;
 }
 
 .navmenu .dropdown a:hover,
@@ -350,7 +340,6 @@ h6 {
   color: var(--nav-dropdown-hover-color);
 }
 
-/* === SMOOTH SLIDE-DOWN === */
 .navmenu .dropdown ul {
   position: static;
   display: none;
@@ -360,34 +349,17 @@ h6 {
   background-color: var(--nav-dropdown-background-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   box-shadow: none;
-
-  max-height: 0;          /* hidden state */
-  overflow: hidden;       /* hide content */
-  opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 
 .navmenu .dropdown ul ul {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
-/* When dropdown is active, expand smoothly */
-.navmenu .dropdown > .dropdown-active {
+.navmenu .dropdown>.dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
-
-  max-height: 500px;   /* enough space to show all items */
-  opacity: 1;
 }
-
-/* Allow wrapping for submenu items */
-.navmenu .dropdown ul a,
-.navmenu .dropdown ul a:focus {
-  white-space: normal;   /* ✅ allow text to wrap */
-  line-height: 1.4;      /* better spacing for multi-line */
-  word-break: break-word; /* if super long words/URLs */
-}
-
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -415,40 +387,43 @@ h6 {
 # Custom Preloader with Logo
 --------------------------------------------------------------*/
 #preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff; /* page background color */
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff; /* page background color */
+    transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
-/* The logo inside the preloader */
-#preloader img {
-  width: 120px; /* adjust logo size */
-  height: auto;
-  animation: pulse 1.5s infinite ease-in-out;
-}
+    /* The logo inside the preloader */
+    #preloader img {
+        width: 120px; /* adjust logo size */
+        height: auto;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
 
 /* Pulse animation for the logo */
 @keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 0.7;
-  }
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
 }
 
 /* When preloader finishes */
 #preloader.fade-out {
-  opacity: 0;
-  visibility: hidden;
-}/*--------------------------------------------------------------
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
@@ -1229,16 +1204,7 @@ section,
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 0%);
-}
-
-.portfolio-info ul li a {
-  display: inline-block;
-  max-width: 100%;         /* Prevents overflow */
-  white-space: nowrap;     /* Keeps it on one line */
-  overflow: hidden;        /* Hides extra text */
-  text-overflow: ellipsis; /* Adds the ... */
-  vertical-align: middle;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 /*--------------------------------------------------------------
