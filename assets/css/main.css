@@ -1278,3 +1278,19 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Keep the mobile menu control visible and easy to tap on narrow viewports. */
+@media (max-width: 1199px) {
+  #header .header-toggle {
+    display: flex;
+    border: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  #header .header-toggle i {
+    font-size: inherit;
+    line-height: 1;
+  }
+}
+
