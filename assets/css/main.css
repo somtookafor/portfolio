@@ -1278,7 +1278,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-/* Keep the mobile menu control visible and easy to tap on narrow viewports. */
+/* Phone-first refinements */
 @media (max-width: 1199px) {
   #header .header-toggle {
     display: flex;
@@ -1294,3 +1294,98 @@ section,
   }
 }
 
+@media (max-width: 767.98px) {
+  .section,
+  section {
+    padding: 44px 0;
+  }
+
+  .section-title {
+    padding-bottom: 32px;
+  }
+
+  .section-title h2 {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 72px 0 48px;
+  }
+
+  .hero h2 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+    line-height: 1.12;
+    overflow-wrap: anywhere;
+  }
+
+  .hero p {
+    font-size: clamp(1.05rem, 5vw, 1.3rem);
+    line-height: 1.5;
+  }
+
+  .about .content ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+    overflow-wrap: anywhere;
+  }
+
+  .portfolio .portfolio-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem;
+  }
+
+  .portfolio .portfolio-filters li {
+    margin: 0;
+    padding: 0.5rem 0.65rem;
+  }
+
+  .contact .php-email-form {
+    padding: 1.25rem;
+  }
+
+  .header .header-toggle,
+  .scroll-top {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container,
+  .container-fluid {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .custom-accordion-headers {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .custom-accordion-headers .accordion-button {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+  }
+
+  .footer-brand {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-padding-top: 1rem;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
