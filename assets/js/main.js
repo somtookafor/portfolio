@@ -19,6 +19,9 @@
     document.querySelector('#header').classList.toggle('header-show');
     headerToggleIcon.classList.toggle('bi-list');
     headerToggleIcon.classList.toggle('bi-x');
+    const isOpen = document.querySelector('#header').classList.contains('header-show');
+    headerToggleBtn.setAttribute('aria-expanded', String(isOpen));
+    headerToggleBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
   }
   headerToggleBtn.addEventListener('click', headerToggle);
 
